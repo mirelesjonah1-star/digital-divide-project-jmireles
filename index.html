@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Digital Divide: NYC vs South Bend</title>
+
+  <!-- index.html and main.css are in the SAME folder -->
+  <link rel="stylesheet" href="../main.css" />
+</head>
+
+<body>
+
+<header class="header">
+  <div class="wrap">
+    <div class="hero">
+      <div class="heroText">
+        <h1>Digital Divide: NYC vs South Bend</h1>
+        <p>
+          Interactive visualizations comparing public Wi-Fi access, community internet resources,
+          and digital infrastructure across two very different cities.
+        </p>
+
+        <div class="badges">
+          <span class="badge">Interactive Plotly</span>
+          <span class="badge">NYC Open Data</span>
+          <span class="badge">South Bend Open Data</span>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#overview">Overview</a>
+      <a href="#nyc">NYC</a>
+      <a href="#southbend">South Bend</a>
+      <a href="#sources">Sources</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="overview" class="card">
+    <h3>Project Overview</h3>
+    <p class="muted">
+      This project explores how access to digital infrastructure varies across cities, focusing on
+      public Wi-Fi availability, computer access, and community-level indicators of digital equity.
+    </p>
+
+    <div class="grid2">
+      <div>
+        <h4>Intended Audience</h4>
+        <ul>
+          <li>Students and residents seeking public internet access</li>
+          <li>Community advocates and policymakers</li>
+          <li>Anyone interested in digital inequality</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Methods</h4>
+        <ul>
+          <li>Cleaned and standardized public datasets</li>
+          <li>Aggregated data by borough, neighborhood, and district</li>
+          <li>Created interactive Plotly visualizations</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="nyc" class="sectionTitle">
+    <h2>New York City</h2>
+    <p class="muted">Public Wi-Fi access and digital infrastructure patterns</p>
+  </section>
+
+  <section class="card">
+    <h3>NYC Public Wi-Fi Hotspots — Locations</h3>
+    <iframe class="viz" loading="lazy" src="viz/viz1_nyc_wifi_map.html"></iframe>
+    <h4>Insights</h4>
+    <ol>
+      <li>Hotspots cluster in high-traffic areas.</li>
+      <li>Coverage varies significantly by neighborhood.</li>
+      <li>Public Wi-Fi helps reduce access barriers.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h3>NYC Wi-Fi Hotspots by Neighborhood (NTA)</h3>
+    <iframe class="viz" loading="lazy" src="viz/viz_wifi_choropleth_nta.html"></iframe>
+    <h4>Insights</h4>
+    <ol>
+      <li>Neighborhood-level disparities are visible.</li>
+      <li>Some NTAs have far fewer hotspots.</li>
+      <li>Useful for targeted infrastructure planning.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h3>NYC Public Computer Centers — Locations</h3>
+    <!-- If you keep the (1) and the space, use %20 for the space -->
+    <iframe class="viz" loading="lazy" src="viz/viz2_nyc_computer_centers_map%20(1).html"></iframe>
+    <h4>Insights</h4>
+    <ol>
+      <li>Centers provide devices and stable access.</li>
+      <li>Some areas rely heavily on these locations.</li>
+      <li>Gaps suggest expansion opportunities.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h3>Public Computer Centers by Borough</h3>
+    <iframe class="viz short" loading="lazy" src="viz/viz_3_borough_wifi_totals%20(1).html"></iframe>
+
+    <h4>Insights</h4>
+    <ol>
+      <li>Distribution varies widely by borough.</li>
+      <li>Counts alone don’t reflect demand.</li>
+      <li>Lower counts may indicate device deserts.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h3>Wi-Fi Hotspots by Borough (Totals)</h3>
+    <iframe class="viz short" loading="lazy" src="viz/viz_3_borough_wifi_totals%20(1).html"></iframe>
+
+    <h4>Insights</h4>
+    <ol>
+      <li>Borough-level differences are substantial.</li>
+      <li>Population density partially explains totals.</li>
+      <li>Disparities remain after normalization.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h3>Top 20 Neighborhoods (NTA) by Wi-Fi Hotspots</h3>
+    <iframe class="viz short" loading="lazy" src="viz/viz_2_top20_nta_wifi_hotspots%20(1).html"></iframe>
+    <h4>Insights</h4>
+    <ol>
+      <li>Hotspots concentrate in a small set of NTAs.</li>
+      <li>Tourism and commuting likely influence placement.</li>
+      <li>Other areas may still have unmet need.</li>
+    </ol>
+  </section>
+
+  <section id="southbend" class="sectionTitle">
+    <h2>South Bend</h2>
+    <p class="muted">Public Wi-Fi access and community indicators</p>
+  </section>
+
+  <section class="card">
+    <h3>South Bend Open Wi-Fi — Locations</h3>
+    <iframe class="viz" loading="lazy" src="viz/viz_1_sb_open_wifi_locations.html"></iframe>
+    <h4>Insights</h4>
+    <ol>
+      <li>Public Wi-Fi locations are unevenly distributed.</li>
+      <li>Some neighborhoods have limited access.</li>
+      <li>Highlights potential service gaps.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h3>Total Open Wi-Fi Locations in South Bend</h3>
+    <iframe class="viz short" loading="lazy" src="viz/viz_2_sb_open_wifi_totals.html"></iframe>
+    <h4>Insights</h4>
+    <ol>
+      <li>Provides a citywide access summary.</li>
+      <li>Useful for comparison with NYC.</li>
+      <li>Contextualizes scale differences.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h3>South Bend City Council Districts</h3>
+    <iframe class="viz" loading="lazy" src="viz/viz_1_sb_council_districts.html"></iframe>
+    <h4>Insights</h4>
+    <ol>
+      <li>Districts frame governance and policy.</li>
+      <li>Supports district-level analysis.</li>
+      <li>Useful for targeted interventions.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h3>Top South Bend Community Complaints</h3>
+    <iframe class="viz short" loading="lazy" src="viz/viz_1_top_sb_compl.html"></iframe>
+    <h4>Insights</h4>
+    <ol>
+      <li>Shows major areas of public concern.</li>
+      <li>Provides social context for infrastructure data.</li>
+      <li>Useful for accountability analysis.</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h3>SBPD Community Complaints Over Time</h3>
+    <iframe class="viz short" loading="lazy" src="viz/viz1_complaints_over_time.html"></iframe>
+    <h4>Insights</h4>
+    <ol>
+      <li>Complaint volume changes over time.</li>
+      <li>Spikes may reflect key events.</li>
+      <li>Trends contextualize community trust.</li>
+    </ol>
+  </section>
+
+  <section id="sources" class="card">
+    <h3>Data Sources</h3>
+    <ul>
+      <li>NYC Open Data — Wi-Fi Hotspot Locations</li>
+      <li>NYC Open Data — Public Computer Centers</li>
+      <li>City of South Bend Open Data</li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <p class="small">CSE Principles Final Project</p>
+  </footer>
+
+</main>
+</body>
+</html>
